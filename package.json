@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/fabacus/node-bamboohr/issues"
   },
-  "homepage": "https://github.com/fabacus/node-bamboohr#readme"
+  "homepage": "https://github.com/fabacus/node-bamboohr#readme",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
 }
