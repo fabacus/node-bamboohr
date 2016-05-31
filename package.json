@@ -1,6 +1,6 @@
 {
   "name": "bamboohr",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Node wrapper for the Bamboo HR API.",
   "main": "index.js",
   "scripts": {
