@@ -1,0 +1,33 @@
+{
+  "name": "bamboohr",
+<<<<<<< HEAD
+  "version": "0.0.8",
+=======
+  "version": "0.0.3",
+>>>>>>> facb269f7ac195d0abd8e10df5485c80f9ab2148
+  "description": "Node wrapper for the Bamboo HR API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabacus/node-bamboohr.git"
+  },
+  "keywords": [
+    "bamboohr",
+    "bamboo",
+    "hr",
+    "node",
+    "api"
+  ],
+  "author": "Kristo Mikkonen <mikkonek@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabacus/node-bamboohr/issues"
+  },
+  "homepage": "https://github.com/fabacus/node-bamboohr#readme",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}
