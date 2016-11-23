@@ -29,16 +29,15 @@ class Bamboohr {
     };
 
     return new Promise((resolve, reject) => {
-      request(args, function(error, response, body) {
-        if (Buffer.isBuffer(body)) {
-          reject(
-            new Error('something went wrong with the API call \n Request method: POST \n URL: ' + args.url + '\n data: \n ' + body.toString())
-          );
+      request(args, function(err, response, body) {
+        if (err) return reject(err);
+        if (Buffer.isBuffer(body) || response.headers['content-type'].includes('text/html')) {
+          return reject(new Error(body.toString()));
         }
         if ((typeof body) === 'string') {
           body = JSON.parse(body);
         }
-        resolve(body);
+        return resolve(body);
       });
     });
   }
